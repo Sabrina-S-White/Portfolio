@@ -8,6 +8,8 @@ y = 0;
 
 projects.addEventListener('click', () => {
     if (x == 0) {
+        infoMid.style.display = "none";
+        y = 0;
         projectsMid.style.display = "block";
         projectsMid.style.backgroundColor = "rgba(var(--frontColor), 0.2)"
         x++;
@@ -19,6 +21,8 @@ projects.addEventListener('click', () => {
 
 info.addEventListener('click', () => {
     if (y == 0) {
+        projectsMid.style.display = "none";
+        x = 0;
         infoMid.style.display = "block";
         infoMid.style.backgroundColor = "rgba(var(--frontColor), 0.2)"
         y++;
