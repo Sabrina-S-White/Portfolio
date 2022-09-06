@@ -265,9 +265,6 @@ body:before {
     color: var(--text);
     position: relative;
     font-weight: bolder;
-}
-
-#info {
     position: relative;
 }
 
@@ -294,10 +291,95 @@ body:before {
     color: var(--text);
     position: relative;
     font-weight: bolder;
+    position: relative;
+}
+
+#contact::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(var(--borderLine));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#contact:hover::after {
+    width: 100%;
 }
 
 #contactDivMid {
-    display: flex;
-    gap: 20px;
+    display: none;
+    height: 100%;
+    gap: 25px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: rgb(var(--text));
+    padding: 20px;
+    font-style: italic;
 }
 
+#contactList {
+    display: flex;
+    gap: 20px;
+    height: 100%;
+    align-items: center;
+}
+
+#github {
+    position: relative;
+}
+
+#github a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(var(--borderLine));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#github a:hover::after {
+    width: 100%;
+}
+
+#linkedin {
+    position: relative;
+}
+
+#linkedin a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(var(--borderLine));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#linkedin a:hover::after {
+    width: 100%;
+}
+
+#email {
+    position: relative;
+}
+
+#email a::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(var(--borderLine));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#email a:hover::after {
+    width: 100%;
+}
