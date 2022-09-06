@@ -61,7 +61,6 @@ body:before {
     height: 95%;
     border: 1px solid rgb(var(--borderLine));
     display: flex;
-    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -86,38 +85,28 @@ body:before {
     padding: 10px;
 }
 
-.leftFoot {
-    height: var(--footer);
-    padding: 10px;
-    
-}
-
 .list {
     list-style: none;
     display: flex;
     flex-direction: column;
     font-size: 1.3rem;
-    padding-top: 10%;
+    padding-top: 0%;
+    gap: 25px;
+    font-weight: bolder; 
 }
 
-.bottomLeftList a {
+.list a {
     text-decoration: none;
     color:inherit;
     font-family: inherit;
     font-size: 1.3rem;
 }
 
-.bottomLeftList {
-    display: flex;
-    gap: 25px;
-    font-weight: bolder;   
-}
-
-#info {
+#contact a{
     position: relative;
 }
 
-#info::after {
+#contact a::after {
     content: '';
     height: 2px;
     width: 0;
@@ -128,26 +117,7 @@ body:before {
     transition: 0.5s;
 }
 
-#info:hover::after {
-    width: 100%;
-}
-
-#contact {
-    position: relative;
-}
-
-#contact::after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(var(--borderLine));
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-#contact:hover::after {
+#contact a:hover::after {
     width: 100%;
 }
 
@@ -183,9 +153,9 @@ body:before {
     align-items: flex-end;
     margin-bottom: 5%;
     margin-right: 5%;
+    margin-left: 1%;
     justify-content: space-between;
     flex-direction: column;
-    
 }
 
 #rightDiv ul li {
@@ -210,8 +180,7 @@ body:before {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: var(--middle);
-    
+    width: var(--middle);    
 }
 
 #projectDivMiddle {
@@ -221,6 +190,7 @@ body:before {
     font-size: 1.2rem;
     font-family: inherit;
     color: rgb(var(--text));
+    padding: 20px;
 }
 
 #projectDivMiddle ul li a {
@@ -274,3 +244,62 @@ body:before {
 #pTwo a:hover::after {
     width: 100%;
 }
+
+#infoDivMiddle {
+    display: none;
+    height: 100%;
+    gap: 25px;
+    font-size: 1.1rem;
+    font-family: inherit;
+    color: rgb(var(--text));
+    padding: 20px;
+    font-style: italic;
+}
+
+#infoIcons {
+    display: flex;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+    gap: 20px;
+    justify-content: center;
+}
+
+#info {
+    border:none;
+    background: var(--frontColor);
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--text);
+    position: relative;
+    font-weight: bolder;
+}
+
+#info {
+    position: relative;
+}
+
+#info::after {
+    content: '';
+    height: 2px;
+    width: 0;
+    background: rgb(var(--borderLine));
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+#info:hover::after {
+    width: 100%;
+}
+
+#contact {
+    border:none;
+    background: var(--frontColor);
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--text);
+    position: relative;
+    font-weight: bolder;
+}
+
