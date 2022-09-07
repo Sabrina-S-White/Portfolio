@@ -22,7 +22,6 @@
     font-family: Inconsolata, sans-serif;
     list-style: none;
     text-transform: none;
-    cursor: default;
 }
 
 body {
@@ -382,4 +381,8 @@ body:before {
 
 #email a:hover::after {
     width: 100%;
+}
+
+button {
+    cursor:pointer;
 }
