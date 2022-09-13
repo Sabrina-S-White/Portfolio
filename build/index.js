@@ -18,7 +18,7 @@ projects.addEventListener('click', () => {
         contactMid.style.display = "none";
         z = 0;
 
-        projectsMid.style.display = "block";
+        projectsMid.style.display = "grid";
         projectsMid.style.backgroundColor = "rgba(var(--frontColor), 0.2)";
         x++;
     } else if (x == 1) {
