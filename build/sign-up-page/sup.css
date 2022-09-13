@@ -1,0 +1,164 @@
+/* Initial page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+    text-decoration: none;
+    list-style: none;
+    font-size: 24px;
+}
+
+html { 
+    background: url(./robert-keane-rlbG0p_nQOU-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Page layout */
+.leftDiv {
+    height: 100%;   
+    width: 60%;
+    
+}
+
+.leftContent {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.leftContent footer p,
+.leftContent footer p a {
+    font-size: 0.6rem;
+}
+
+.leftFiller {
+    height: 40%;
+}
+
+.bannerDiv {
+    height: 4rem;
+    width: 100%;
+    background-color: rgba(33, 37, 41, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerDiv p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #fff;
+}
+
+.logoDiv {
+    height: 100px;
+    width: 100px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.rightDiv {
+    height: 100%;
+    width: 40%;
+    background-color: rgba(243, 191, 70, 1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    font-size: 0.75rem;
+}
+
+.login a {
+    font-size: 0.75rem;
+    margin: auto;
+    text-decoration: underline;
+}
+
+/* Form styling */
+
+.form {
+    background-color: rgb(92, 180, 184);
+    border-radius: 3px;
+    width: 100%;
+    padding: 50px;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    gap: 2px;
+}
+  
+.formRow input[type='text'],
+.formRow input[type='email'],
+.formRow input[type='tel'],
+.formRow input[type='password'] {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+    padding: 7px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    width: 75%;
+}
+
+.formRow input[type='text']:focus,
+.formRow input[type='email']:focus,
+.formRow input[type='tel']:focus,
+.formRow input[type='password']:focus{
+    outline: 1px solid rgb(49, 112, 204);
+    box-shadow:3px 2px 5px gray;
+    
+}
+
+.formRow input[type='text']:valid,
+.formRow input[type='email']:valid,
+.formRow input[type='tel']:valid,
+.formRow input[type='password']:valid {
+    border: 1px solid green;
+}
+
+.formRow input[type='text']:invalid,
+.formRow input[type='email']:invalid,
+.formRow input[type='tel']:invalid,
+.formRow input[type='password']:invalid {
+    border: 1px solid red;
+}
+
+button {
+    height: 2rem;
+    width: 6rem;
+    border-radius: 34% 66% 68% 32% / 76% 25% 75% 24%;
+    background-color: rgb(49, 112, 204);
+    border:none;
+}
+
+button:hover {
+    background-color: #8AAFE3;
+    color: #fff;
+    cursor: pointer;
+}
+

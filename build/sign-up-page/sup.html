@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="./sup.css">
+</head>
+<body>
+        <div class="leftDiv">
+            <div class="leftFiller"></div>
+            <div class="leftContent">
+                <div class='bannerDiv'>
+                    <div class="logoDiv"><img src="./logo.png"/></div>
+                    <p>Submit Your Art</p>
+                </div>
+                <footer>
+                    <p>Photo by <a href="https://unsplash.com/@keano16?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robert Keane</a> on <a href="https://unsplash.com/s/photos/art?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                    </p>
+                </footer>
+            </div>
+        </div>
+        <div class="rightDiv">
+            <p>Create an account to submit your art!</p>
+            <form action="" method="get" class="form">
+                <div class="formContents">
+                    <div class="formRow">
+                        <label for="firstName">First name</label>
+                        <input id="firstName" name="first-name" type="text" minlength="1" placeholder="*Art"/>
+                    </div>
+                    <div class="formRow">
+                        <label for="lastName">Last name</label>
+                        <input id="lastName" name="first-name" type="text" minlength='1' placeholder="*Garfunkel"/>
+                    </div>
+                    <div class="formRow">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" placeholder="*art4ever@gmail.com">
+                    </div>
+                    <div class="formRow">
+                        <label for="phoneNumb">Phone number</label>
+                        <input id="phoneNum" name="phone" type="tel" pattern="^\(?\d{3}\)?[- ]?\d{3}[- ]?\d{4}$" placeholder="*000-000-0000"/>
+                    </div>
+                    <div class="formRow">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" minlength="7" type="password" placeholder="* must be at least 7 characters"/>
+                    </div>
+                    <div class="formRow">
+                        <label for="confirmPassword">Confirm your password</label>
+                        <input id="confirmPassword" name="confirmPassword" minlength="7" type="password" placeholder="* please reenter your password"/>
+                    </div>
+                    <div class="formRow">
+                        <button>Submit</button>
+                    </div>
+                </div>
+            </form>
+            <p class="login">Already have an account? <a href=''>Log in</a></p>
+        </div>
+</body>
+<script src="./main.js"></script>
+</html>
