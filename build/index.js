@@ -6,7 +6,7 @@ const infoMid = document.getElementById('infoDivMiddle');
 const info = document.getElementById('info');
 y = 0;
 
-const contactMid = document.getElementById('contactDivMid');
+const contactMid = document.getElementById('contactDivMiddle');
 const contact = document.getElementById('contact');
 z = 0;
 
@@ -35,7 +35,7 @@ info.addEventListener('click', () => {
         contactMid.style.display = "none";
         z = 0;
 
-        infoMid.style.display = "block";
+        infoMid.style.display = "flex";
         infoMid.style.backgroundColor = "rgba(var(--frontColor), 0.2)";
         y++;
     } else if (y == 1) {

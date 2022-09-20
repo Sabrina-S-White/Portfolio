@@ -47,7 +47,7 @@ body:before {
 
 /* Background div layout. */
 
-#primaryDiv {
+.primaryDiv {
     background-color: rgba(var(--frontColor), var(--alpha));
     color: rgb(var(--text));
     height: 85vh;
@@ -67,7 +67,7 @@ body:before {
 
 /* Inner left div layout and animation. */
 
-#leftDiv {
+.leftDiv {
     width: var(--left);
     display: flex;
     flex-direction: column;
@@ -133,7 +133,7 @@ body:before {
 
 /* Inner right div layout and animation. */
 
-#rightDiv {
+.rightDiv {
     width: var(--right);
     font-size: 1.2rem;
     display: flex;
@@ -145,19 +145,19 @@ body:before {
     flex-direction: column;
 }
 
-#rightDiv ul li {
+.rightDiv ul li {
     width: 36px;
     height: 36px;
     list-style: none;
 }
 
-#rightDiv ul li a {
+.rightDiv ul li a {
     text-transform: none;
 }
 
 /* Inner middle div layout and animation. */
 
-#midDiv {
+.midDiv {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -165,7 +165,7 @@ body:before {
     width: var(--middle);    
 }
 
-#projectDivMiddle {
+.projectDivMiddle {
     display: none;
     height: 100%;
     width: 60%;
@@ -178,7 +178,7 @@ body:before {
     align-items: center;
 }
 
-#projectDivMiddle ul li a {
+.projectDivMiddle ul li a {
     text-decoration: none;
     color: rgb(var(--text));
 }
@@ -209,7 +209,7 @@ body:before {
     width: 100%;
 }
 
-#infoDivMiddle {
+.infoDivMiddle {
     display: none;
     height: 100%;
     gap: 25px;
@@ -218,9 +218,12 @@ body:before {
     color: rgb(var(--text));
     padding: 20px;
     font-style: italic;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-#infoIcons {
+.infoIcons {
     display: flex;
     padding-top: 2rem;
     padding-bottom: 5rem;
@@ -228,7 +231,7 @@ body:before {
     justify-content: center;
 }
 
-#contactDivMid {
+.contactDivMiddle {
     display: none;
     height: 100%;
     gap: 25px;
@@ -239,7 +242,7 @@ body:before {
     font-style: italic;
 }
 
-#contactList {
+.contactList {
     display: flex;
     gap: 20px;
     height: 100%;
@@ -267,4 +270,8 @@ body:before {
 
 button {
     cursor:pointer;
+}
+
+@media only screen and (max-width: 425px) {
+
 }
