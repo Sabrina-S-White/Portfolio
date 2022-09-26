@@ -35,7 +35,7 @@ info.addEventListener('click', () => {
         contactMid.style.display = "none";
         z = 0;
 
-        infoMid.style.display = "block";
+        infoMid.style.display = "flex";
         infoMid.style.backgroundColor = "rgba(var(--frontColor), 0.2)";
         y++;
     } else if (y == 1) {
