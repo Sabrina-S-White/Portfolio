@@ -5,7 +5,7 @@
     font-family:'Times New Roman', Times, serif;
     list-style: none;
     text-decoration: none;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 button {
@@ -26,7 +26,7 @@ button svg {
 
 .container {
     display: grid;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 20% 80%;
     grid-template-rows: 20% 80%;
     background-color: aliceblue;
     height: 100vh;
@@ -236,9 +236,10 @@ button svg {
     background-color: rgb(255, 255, 255);
     grid-row: 4 / 5;
     display: grid;
-    gap: 25px;
+    gap: 15px;
     padding: 10px;
     border-radius: 10px;
+    overflow: scroll;
 }
 
 .people {
