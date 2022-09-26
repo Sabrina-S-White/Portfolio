@@ -1,3 +1,7 @@
+:root {
+    --hello: world;
+}
+
 * {
     margin: 0;
     padding: 0;
