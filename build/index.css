@@ -24,6 +24,10 @@
     text-transform: none;
 }
 
+button {
+    cursor:pointer;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -105,32 +109,6 @@ body:before {
     font-size: 1.3rem;
 }
 
-.leftItems {
-    border:none;
-    background: var(--frontColor);
-    font-size: inherit;
-    font-family: inherit;
-    color: var(--text);
-    position: relative;
-    font-weight: bolder;
-    position: relative;
-}
-
-.leftItems::after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(var(--borderLine));
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.leftItems:hover::after {
-    width: 100%;
-}
-
 /* Inner right div layout and animation. */
 
 #rightDiv {
@@ -188,31 +166,10 @@ body:before {
     margin-bottom: 3rem;
 }
 
-.projectList a {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    position: relative;
-}
-
-.projectList a::after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(var(--borderLine));
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-
-.projectList a:hover::after {
-    width: 100%;
-}
-
 #infoDivMiddle {
-    display: flex;
+    display: none;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: start;
     height: 100%;
     gap: 25px;
     font-size: 1.1rem;
@@ -223,7 +180,12 @@ body:before {
 }
 
 .infoDivMiddleContent {
-    height: 10%;
+font-size: 1rem;
+padding: 10px 0 10px 0;
+}
+
+.infoDivMiddleContent a {
+    text-decoration: none;
 }
 
 #infoIcons {
@@ -252,11 +214,20 @@ body:before {
     align-items: center;
 }
 
-.contactItems {
+/* Hover animation */
+
+.hover {
+    border:none;
+    background: var(--frontColor);
+    font-size: inherit;
+    font-family: inherit;
+    color: var(--text);
+    position: relative;
+    font-weight: bolder;
     position: relative;
 }
 
-.contactItems a::after {
+.hover::after {
     content: '';
     height: 2px;
     width: 0;
@@ -267,10 +238,8 @@ body:before {
     transition: 0.5s;
 }
 
-.contactItems a:hover::after {
+.hover:hover::after {
     width: 100%;
 }
 
-button {
-    cursor:pointer;
-}
+/* End hover animation */
