@@ -49,8 +49,8 @@ button {
     background: rgb(var(--lin1));
 	color: inherit;
 	border: 1px solid rgb(var(--borderLine));
-	padding: 0;
-    margin: 10px;
+	padding: 5px 10px 5px 10px;
+    margin: 5px;
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
@@ -82,6 +82,7 @@ button {
     flex-direction: column;
     gap: 15px;
     justify-content: space-evenly;
+    align-items: center;
     padding: 10px;
     padding-left: 35px;
 }
@@ -158,16 +159,63 @@ button {
     gap: 10px;
 }
 
-.educationContent {
+.educationDiv {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.educationDiv ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.school {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#ucd {
+    font-weight:bolder;
+    font-size: 1.2rem;
+}
+
+#ccd {
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.educationContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .educationDiv ul li,
 .certifications ul li{
     font-size: 0.9rem;
 }
+
+.educationDiv h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.certifications {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px 0 20px;
+}
+
+.certifications h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
 
 .contactMe {
 
