@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inconsolata&display=swap');
+/* Variables, default syling, and background gradient. */
+:root {
+    --frontColor: 53, 80, 112;
+    --borderLine: 222, 242, 254;
+    --lin1: 109, 89, 122;
+    --lin2: 181, 101, 118;
+    --text: 226, 226, 226;
+    --alpha: 0.7;
+    --header: 35%;
+    --main: 50%;
+    --footer: 15%;
+    --right: 30%;
+    --middle: 40%;
+    --left: 30%;
+    cursor:default;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: Inconsolata, sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:before {
+	content:"";
+	position:fixed;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	z-index:-1; 
+	background: linear-gradient(to bottom, rgba(var(--lin1), 0.6), rgba(var(--lin2), 0.6));
+}
+
+button {
+    background: rgb(var(--lin1));
+	color: inherit;
+	border: 1px solid rgb(var(--borderLine));
+	padding: 0;
+    margin: 10px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+/* Main page styling */
+
+.mainDiv {
+    background-color: rgba(var(--frontColor), var(--alpha));
+    color: rgb(var(--text));
+    height: 85vh;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.borderDiv {
+    width: 95%;
+    height: 95%;
+    border: 1px solid rgb(var(--borderLine));
+    display: flex;
+    overflow: hidden;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-evenly;
+    padding: 10px;
+    padding-left: 35px;
+}
+
+/* Content div styling */
+
+.workList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px;
+}
+
+.workList ul {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    gap: 20px;
+}
+
+.workExperience {
+
+}
+
+.publications {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pubsDiv {
+    margin: 0 20px 10px 20px;
+    overflow: scroll;
+}
+
+.pubsDiv ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pubsDiv ul li,
+.pubsDiv ul li a {
+    font-size: 0.8rem;
+    display: flex;
+    gap: 10px;
+    color: rgb(var(--text));
+}
+
+.pubsDiv ul li a {
+    text-decoration: dotted underline;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boardContent {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.boardContent h2 {
+    text-decoration: underline;
+}
+
+.education {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.educationContent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.educationDiv ul li,
+.certifications ul li{
+    font-size: 0.9rem;
+}
+
+.contactMe {
+
+}
+
+/* Popup styling */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
