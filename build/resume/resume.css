@@ -116,6 +116,8 @@ button {
 .pubsDiv {
     margin: 0 20px 10px 20px;
     overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .pubsDiv ul {
@@ -126,7 +128,7 @@ button {
 
 .pubsDiv ul li,
 .pubsDiv ul li a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     gap: 10px;
     color: rgb(var(--text));
@@ -218,9 +220,18 @@ button {
 
 
 .contactMe {
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    width: 100%;
 }
 
+#contactList {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 /* Popup styling */
 
 .hide {
@@ -230,3 +241,4 @@ button {
 .show {
     display: flex;
 }
+
