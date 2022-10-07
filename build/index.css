@@ -191,7 +191,7 @@ padding: 10px 0 10px 0;
 #infoIcons {
     display: flex;
     padding-top: 2rem;
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
     gap: 20px;
     justify-content: center;
 }
