@@ -1,245 +1,267 @@
 @import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Inconsolata&display=swap');
 /* Variables, default syling, and background gradient. */
 :root {
-    --frontColor: 53, 80, 112;
-    --borderLine: 222, 242, 254;
-    --lin1: 109, 89, 122;
-    --lin2: 181, 101, 118;
-    --text: 226, 226, 226;
-    --alpha: 0.7;
-    --header: 35%;
-    --main: 50%;
-    --footer: 15%;
-    --right: 30%;
-    --middle: 40%;
-    --left: 30%;
-    font-size: 20px;
+  --frontColor: 53, 80, 112;
+  --borderLine: 222, 242, 254;
+  --lin1: 109, 89, 122;
+  --lin2: 181, 101, 118;
+  --text: 226, 226, 226;
+  --alpha: 0.7;
+  --header: 35%;
+  --main: 50%;
+  --footer: 15%;
+  --right: 30%;
+  --middle: 40%;
+  --left: 30%;
+  font-size: 20px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Inconsolata, sans-serif;
-    list-style: none;
-    text-transform: none;
+  margin: 0;
+  padding: 0;
+  font-family: Inconsolata, sans-serif;
+  list-style: none;
+  text-transform: none;
 }
 
 button {
-    cursor:pointer;
+  cursor: pointer;
 }
 
 body {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 7%;
-    bottom: 10%;
-    right: 10%;
-    left: 8%;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 7%;
+  bottom: 10%;
+  right: 10%;
+  left: 8%;
 }
 
 body:before {
-	content:"";
-	position:fixed;
-	left:0;
-	top:0;
-	right:0;
-	bottom:0;
-	z-index:-1; 
-	background: linear-gradient(to bottom, rgba(var(--lin1), 0.6), rgba(var(--lin2), 0.6));
+  content: '';
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--lin1), 0.6),
+    rgba(var(--lin2), 0.6)
+  );
 }
 
 /* Background div layout. */
 
 #primaryDiv {
-    background-color: rgba(var(--frontColor), var(--alpha));
-    color: rgb(var(--text));
-    height: 85vh;
-    width: 85vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(var(--frontColor), var(--alpha));
+  color: rgb(var(--text));
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .borderDiv {
-    width: 95%;
-    height: 95%;
-    border: 1px solid rgb(var(--borderLine));
-    display: flex;
-    overflow: hidden;
+  width: 95%;
+  height: 95%;
+  border: 1px solid rgb(var(--borderLine));
+  display: flex;
+  overflow: hidden;
 }
 
 /* Inner left div layout and animation. */
 
 #leftDiv {
-    width: var(--left);
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    justify-content: space-between;
-    left: 2%;
+  width: var(--left);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: space-between;
+  left: 2%;
 }
 
 .leftHeader {
-    height: var(--header);
-    margin: 0px;
-    padding: 10px;
-
+  height: var(--header);
+  margin: 0px;
+  padding: 10px;
 }
 
 .leftMain {
-    height: var(--main);
-    padding: 10px;
+  height: var(--main);
+  padding: 10px;
 }
 
 .leftList {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3rem;
-    padding-top: 0%;
-    gap: 25px;
-    font-weight: bolder; 
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  padding-top: 0%;
+  gap: 25px;
+  font-weight: bolder;
 }
 
 .leftList a {
-    text-decoration: none;
-    color:inherit;
-    font-family: inherit;
-    font-size: 1.3rem;
+  text-decoration: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.3rem;
 }
 
 /* Inner right div layout and animation. */
 
 #rightDiv {
-    width: var(--right);
-    font-size: 1.2rem;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 5%;
-    margin-right: 5%;
-    margin-left: 1%;
-    justify-content: space-between;
-    flex-direction: column;
+  width: var(--right);
+  font-size: 1.2rem;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 5%;
+  margin-right: 5%;
+  margin-left: 1%;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #rightDiv ul li {
-    width: 36px;
-    height: 36px;
-    list-style: none;
+  width: 36px;
+  height: 36px;
+  list-style: none;
 }
 
 #rightDiv ul li a {
-    text-transform: none;
+  text-transform: none;
 }
 
 /* Inner middle div layout and animation. */
 
 #midDiv {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: var(--middle);    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: var(--middle);
 }
 
 #projectDivMiddle {
-    display: none;
-    height: 100%;
-    width: 60%;
-    gap: 25px;
-    font-size: 1.2rem;
-    font-family: inherit;
-    color: rgb(var(--text));
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
+  display: none;
+  height: 100%;
+  width: 60%;
+  gap: 25px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: rgb(var(--text));
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
 }
 
 #projectDivMiddle ul li a {
-    text-decoration: none;
-    color: rgb(var(--text));
+  text-decoration: none;
+  color: rgb(var(--text));
 }
 
 .projectList {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 #infoDivMiddle {
-    display: none;
-    flex-direction: column;
-    justify-content: start;
-    height: 100%;
-    gap: 25px;
-    font-size: 1.1rem;
-    font-family: inherit;
-    color: rgb(var(--text));
-    padding: 20px;
-    font-style: italic;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+  gap: 25px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: rgb(var(--text));
+  padding: 20px;
+  font-style: italic;
 }
 
 .infoDivMiddleContent {
-font-size: 1rem;
-padding: 10px 0 10px 0;
+  font-size: 1rem;
+  padding: 10px 0 10px 0;
 }
 
 .infoDivMiddleContent a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #infoIcons {
-    display: flex;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    gap: 20px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  gap: 20px;
+  justify-content: center;
+}
+
+.infoIcon {
+  object-fit:scale-down;
+  height: 32px;
+  width: 32px;
+}
+
+.infoIcon img {
+  height: 100%;
+}
+
+.infoIcon p {
+  font-size: 0.5rem;
+}
+
+.infoIcon img:hover {
+  scale: 120%;
 }
 
 #contactDivMid {
-    display: none;
-    height: 100%;
-    gap: 25px;
-    font-size: 1.1rem;
-    font-family: inherit;
-    color: rgb(var(--text));
-    padding: 20px;
-    font-style: italic;
+  display: none;
+  height: 100%;
+  gap: 25px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  color: rgb(var(--text));
+  padding: 20px;
+  font-style: italic;
 }
 
 #contactList {
-    display: flex;
-    gap: 20px;
-    height: 100%;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  height: 100%;
+  align-items: center;
 }
 
 /* Hover animation */
 
 .hover {
-    border:none;
-    background: var(--frontColor);
-    font-size: inherit;
-    font-family: inherit;
-    color: var(--text);
-    position: relative;
-    font-weight: bolder;
-    position: relative;
+  border: none;
+  background: var(--frontColor);
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--text);
+  position: relative;
+  font-weight: bolder;
+  position: relative;
 }
 
 .hover::after {
-    content: '';
-    height: 2px;
-    width: 0;
-    background: rgb(var(--borderLine));
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
+  content: '';
+  height: 2px;
+  width: 0;
+  background: rgb(var(--borderLine));
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
 }
 
 .hover:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 /* End hover animation */
